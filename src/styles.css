@@ -1,0 +1,55 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway|Open+Sans+Condensed:300);
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+.front_page {
+	background: url("img/ghosts_blur.jpg") no-repeat top center;
+	background-size: cover;
+}
+
+.outer {
+	text-align: center;
+	display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}	
+
+.middle {
+	display: table-cell;
+    vertical-align: middle;
+}
+
+.search_wrapper {
+	color: white;
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.search_wrapper h1{
+	font-family: 'Raleway', sans-serif;
+	font-size: 5em;
+}
+
+.search_wrapper h3 {
+	font-family: 'Open Sans Condensed', sans-serif;
+	margin-bottom: 20px;
+}
+
+input[type="text"] {
+	border:2px solid #456879;
+	border-radius:10px;
+	box-sizing: border-box;
+	height: 50px;
+	width: 100%;
+	padding: 10px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 1.1em;
+}
+	input[type="text"]:focus {
+		outline: 0;
+	}
