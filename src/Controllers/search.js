@@ -15,18 +15,6 @@ angular.module('GameFindr.search', [])
 		// and invoke onSearchRepsonse() with the response.
 		request.execute(onSearchResponse);
 	}
-
+	
 	return youtubeAPI;
 }]);
-
-
-
-// Called automatically with the response of the YouTube API request.
-window.onSearchResponse = function(response) {
-    //showResponse(response);
-	//delete this later
-	console.log(response);
-	console.log(response.items[0].snippet.title); //title
-	console.log(response.items[0].id.videoId); //videoId needed for url
-	console.log(response.items[0].snippet.thumbnails.medium.url); //thumbnail
-}

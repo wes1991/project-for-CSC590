@@ -6,5 +6,6 @@ angular.module('GameFindr', [
 
 .config(['$routeProvider', function($routeProvider) {
 	$routeProvider.
-		when('/', { templateUrl: 'home.html', controller: 'vidController' })		
+		when('/', { templateUrl: 'home.html', controller: 'vidController' }).
+		when('/results', { templateUrl: 'results.html'})
 }]);
