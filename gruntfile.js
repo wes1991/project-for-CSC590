@@ -14,11 +14,10 @@ module.exports = function(grunt) {
 		uglify: {
 			dist: {
 				files: {			  
-					'build/FlickrFindr.js': [
-						'src/js/FlickrFindr.js',
-						'src/js/services.js',
-						'src/js/controllers.js',
-						'src/js/filters.js'
+					'build/GameFindr.js': [
+						'src/Controllers/route.js',
+						'src/Controllers/search.js',
+						'src/Controllers/controllers.js'
 					]
 				}
 			}
@@ -27,10 +26,12 @@ module.exports = function(grunt) {
 		concat: {
 			dist: {
 				files: {
-					'dist/FlickrFindr.js': [
+					'dist/GameFindr.js': [
 						'node_modules/angular/angular.min.js',
 						'node_modules/angular-route/angular-route.min.js',
-						'build/FlickrFindr.js'
+						'src/Controllers/youtube.js',
+						'src/Controllers/setup.js',
+						'build/GameFindr.js'
 					]
 				}
 			}
@@ -39,8 +40,10 @@ module.exports = function(grunt) {
 		copy: {
 			dist: {
 				files: [
-					{ expand: true, src: ['index.html'], dest: 'dist/', cwd: 'src' },
-					{ expand: true, src: ['stylesheet.css'], dest: 'dist/', cwd: 'src' },
+					{ expand: true, src: ['Views/index.html'], dest: 'dist/', cwd: 'src' },
+					{ expand: true, src: ['Views/home.html'], dest: 'dist/', cwd: 'src' },
+					{ expand: true, src: ['img/tetris.jpg'], dest: 'dist/', cwd: 'src' },
+					{ expand: true, src: ['styles.css'], dest: 'dist/', cwd: 'src' },
 					{ expand: true, src: ['partials/photos.html'], dest: 'dist/', cwd: 'src' },
 					{ expand: true, src: ['partials/details.html'], dest: 'dist/', cwd: 'src' }
 				]
@@ -50,7 +53,7 @@ module.exports = function(grunt) {
 		processhtml: {
 			dist: {
 				files: [
-					{ expand: true, src: ['index.html'], dest: 'dist/', cwd: 'src' }
+					{ expand: true, src: ['Views/index.html'], dest: 'dist/', cwd: 'src' }
 				]
 			}
 		},
@@ -66,6 +69,6 @@ module.exports = function(grunt) {
 	});
 
 	grunt.registerTask('default', ['uglify:dist', 'concat:dist', 'copy:dist', 'processhtml:dist' ]);
-	grunt.registerTask('dev', ['uglify:dist', 'concat:dist', 'copy:dist', 'processhtml:dist', 'connect:dev-server' ]);
+	grunt.registerTask('poop', ['uglify:dist', 'concat:dist', 'copy:dist', 'processhtml:dist', 'connect:dev-server' ]);
   
 };

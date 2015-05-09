@@ -1,25 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="GameFindr">
 <head>
   <meta charset="utf-8">
   <title>GameFindr</title>
   <link rel="stylesheet" type="text/css" href="../styles.css">
+  <script src="../GameFindr.js"></script>
 </head>
-<body class="front_page" ng-app="GameFindr">
-	<section class="outer">
-		<div class="middle">
-			<div class="search_wrapper">
-				<h1>GameFindr</h1>
-				<h3>Your favorite video game news all in one place</h3>
-				<input type="text" id="query" placeholder="What game are you looking for?"/>
-			</div>
-		</div>
-	</section>
-
+<body class="front_page">
+	
 	<div ng-view></div>
-	<script src="../controllers/search.js"></script>
-    <script src="https://apis.google.com/js/client.js?onload=onClientLoad" type="text/javascript"></script>
-	<script src="../node_modules/angular/angular.min.js"></script>
-	<script src="../node_modules/angular-route/angular-route.min.js"></script>
+
+    
+	
 </body>
 </html>
