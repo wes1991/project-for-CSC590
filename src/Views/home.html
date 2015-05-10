@@ -1,9 +1,8 @@
-<section class="outer">
-	<div class="middle">
-		<div class="search_wrapper">
-			<h1>GameFindr</h1>
-			<h3>Your favorite video game news all in one place</h3>
-			<input type="text" id="query" placeholder="What game are you looking for?"/>
-		</div>
+<div class="results_wrapper">
+	<div class="results" ng-repeat="video in videos">
+		<a href="https://www.youtube.com/watch?v={{video.id.videoId}}" target="_blank" >
+			<img src={{video.snippet.thumbnails.medium.url}} alt="video_thumbnail"/>
+			<h4 class="title">{{video.snippet.title}}</h4>
+		</a>
 	</div>
-</section>
+</div>

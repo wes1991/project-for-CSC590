@@ -1,5 +1,8 @@
-<h1> RESULTS </h1>
-<h2>{{video[0].snippet.title}}</h2>
-<ul>
-	<li ng-repeat="video in videos">hey</li>
-</ul>
+<div class="results_wrapper">
+	<div class="results" ng-repeat="video in videos">
+		<a href="https://www.youtube.com/watch?v={{video.id.videoId}}" target="_blank" >
+			<img src={{video.snippet.thumbnails.medium.url}} alt="video_thumbnail"/>
+			<h4 class="title">{{video.snippet.title}}</h4>
+		</a>
+	</div>
+</div>

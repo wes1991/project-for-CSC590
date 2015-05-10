@@ -9,6 +9,8 @@ angular.module('GameFindr.search', [])
 			part: 'snippet',
 			q: keyword,
 			type: 'video',
+			maxResults: 20,
+			videoCategoryId: '20',
 		});
 		
 		// Send the request to the API server,
