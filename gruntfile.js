@@ -43,6 +43,7 @@ module.exports = function(grunt) {
 					{ expand: true, src: ['Views/index.html'], dest: 'dist/', cwd: 'src' },
 					{ expand: true, src: ['Views/home.html'], dest: 'dist/', cwd: 'src' },
 					{ expand: true, src: ['Views/results.html'], dest: 'dist/', cwd: 'src' },
+					{ expand: true, src: ['Views/video.html'], dest: 'dist/', cwd: 'src' },
 					{ expand: true, src: ['img/tetris.jpg'], dest: 'dist/', cwd: 'src' },
 					{ expand: true, src: ['styles.css'], dest: 'dist/', cwd: 'src' },
 					{ expand: true, src: ['partials/photos.html'], dest: 'dist/', cwd: 'src' },

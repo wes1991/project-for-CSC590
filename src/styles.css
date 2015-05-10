@@ -30,6 +30,19 @@ body  {
 	display: inline-block;
 }
 
+.logo_search a {
+	color: white;
+	text-decoration: none;
+}
+
+.logo_search a:hover {
+	color: #BDBDBD;
+}
+
+.logo_search a:active {
+	color: #949494;
+}
+
 .logo_search h1{
 	font-family: 'Raleway', sans-serif;
 	font-size: 5em;
