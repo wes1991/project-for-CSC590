@@ -1,0 +1,24 @@
+<h1>Favorites</h1>
+<div class="results_wrapper">
+	<div class="results" ng-repeat="video in favorites">
+		<a ng-href="#/video/{{video.videoId}}">
+			<img ng-src="https://i.ytimg.com/vi/{{video.videoId}}/mqdefault.jpg" alt="video_thumbnail"/>
+		</a>
+	</div>
+</div>
+<style>
+	input[type="text"] {
+		border: 0px;
+		height: 0px;
+		width: 0px;
+		padding: 0px;
+		font-size: 0px;
+	}
+	.fav_button {
+		height: 50px;
+		width: 100%;
+		padding: 10px;
+		font-size: 1.1em;
+		transition: all 0.8s;
+	}
+</style>

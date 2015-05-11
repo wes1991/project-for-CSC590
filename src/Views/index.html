@@ -8,10 +8,15 @@
 </head>
 <body ng-app="GameFindr">
 	<section class="logo_search">
-		<a href="#/"><h1>Game<span style="color: red;">Findr</span></h1></a>
+		<a href="#/"><h1 class="logo">Game<span style="color: red;">Findr</span></h1></a>
 		<h3>Your favorite video game news all in one place</h3>
 		<input type="text" id="query" placeholder="What game are you looking for?"/>
 	</section>
+	<nav>
+		<div class="fav_nav">
+			<a href="#/favorites/"><p class="star">&#9733;</p><span class ="reveal">Favorites</span></a>
+		</div>
+	</nav>
 	<hr>
 	<div ng-view></div>
 </body>
