@@ -6,8 +6,8 @@ angular.module('GameFindr', [
 
 .config(['$routeProvider', function($routeProvider) {
 	$routeProvider.
-		when('/', { templateUrl: 'home.html', controller: 'searchController' }).
-		//when('/results', { templateUrl: 'results.html', controller: 'vidController'}).
+		when('/', { templateUrl: 'home.html', controller: 'homeController' }).
+		when('/results/:keyword', { templateUrl: 'results.html', controller: 'resultsController'}).
 		when('/video/:videoId', { templateUrl: 'video.html', controller: 'vidController'}).
 		otherwise({ redirectTo: '/' });
 }]);

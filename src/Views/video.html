@@ -1,5 +1,13 @@
 <div class="video_wrapper">
-	<iframe ng-src="{{ embedUrl }}" width="560" height="315"  frameborder="0" allowfullscreen></iframe>
-	<h1>{{routeParams.videoId}}</h1>
-	<h2>{{embedURL}}</h2>
+	<h1>{{ video.snippet.title }}</h1>
+	<iframe ng-src="{{ trustedEmbedURL }}" width="840" height="472.5"  frameborder="0" allowfullscreen></iframe>
 </div>
+<style>
+	input[type="text"] {
+		border: 0px;
+		height: 0px;
+		width: 0px;
+		padding: 0px;
+		font-size: 0px;
+	}
+</style>

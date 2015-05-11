@@ -14,10 +14,13 @@ hr {
 	background-image:      -o-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0));
 	margin-top: 20px;
 	margin-bottom: 20px;
+	transition: all 0.5s;
 }
 
 body  {
-	background: url("img/tetris.jpg"), #222222;
+	background: 
+		url("img/tetris.jpg") no-repeat center center, 
+		#222222;
 	background-size: cover;
 	background-attachment: fixed;
 	color: white;
@@ -28,6 +31,8 @@ body  {
 .logo_search {
 	color: white;
 	display: inline-block;
+	padding-top: 0px;
+	transition: padding 0.5s;
 }
 
 .logo_search a {
@@ -62,6 +67,7 @@ input[type="text"] {
 	padding: 10px;
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 1.1em;
+	transition: all 0.8s;
 }
 	input[type="text"]:focus {
 		outline: 0;
@@ -106,6 +112,10 @@ img:hover {
 	transition: 0.5s;
 	opacity: 1;
 	background-color: rgba(67, 67, 67, 0.7);
+}
+
+.video_wrapper {
+	background-color: black;
 }
 /*
 .outer {
