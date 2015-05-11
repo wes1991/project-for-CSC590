@@ -3,12 +3,12 @@
 </div>
 <div ng-if="elementExists(routeParams.videoId)">
 	<div class="btn btn_unfav" value="&#9733;Unfavorite" ng-click="toggle(routeParams.videoId)"/>
-		<span class="unfav_star">&#9733;</span>Unfavorite
+		Unfavorite<span class="btn_star unfav_star">&#9733;</span>
 	</div>
 </div>
 <div ng-if="!elementExists(routeParams.videoId)">
 	<div class="btn btn_fav" ng-click="toggle(routeParams.videoId)"/>
-		<span class="fav_star">&#9734;</span>Favorite
+		Favorite<span class="btn_star">&#9734;</span>
 	</div>
 </div>
 <!--

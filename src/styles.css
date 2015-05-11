@@ -157,10 +157,14 @@ img:hover {
 }
 
 .video_wrapper {
+	position: relative;
 	background-color: black;
+	z-index: 2;
 }
 
 .btn {
+	position: relative;
+	top: -40px;
 	display: inline-block;
 	background-color: #222222;
 	color: gray;
@@ -173,14 +177,23 @@ img:hover {
 	-moz-border-radius-bottomleft: 20px;
 	border-bottom-right-radius: 20px;
 	border-bottom-left-radius: 20px;
+	transition: top 1s;
+	z-index: 1;
+	width: 94px;
 }
 
 .btn:hover {
 	cursor: pointer;
 	color: white;
+	top: 0px;
 }
 
-.unfav_star {
+.btn_star {
+	display: block;
+	font-size: 2em;
+}
+
+.btn_star.unfav_star {
 	color: yellow;
 }
 
