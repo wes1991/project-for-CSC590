@@ -22,7 +22,7 @@ angular.module('GameFindr.controllers', [])
 		console.log(response.items[0].snippet.title); //title
 		console.log(response.items[0].id.videoId); //videoId needed for url
 	};
-	
+	console.log($routeParams.keyword);
 	youtubeAPI.search($routeParams.keyword);
 	
 	if(document.getElementById('query')) {
@@ -32,7 +32,6 @@ angular.module('GameFindr.controllers', [])
 			if(e.keyCode==13){
 				$location.path('/results/' + textElement.value);
 				$scope.$apply();
-				//youtubeAPI.search(textElement.value);
 			}
 		}
 	};
@@ -51,5 +50,4 @@ angular.module('GameFindr.controllers', [])
 
 .controller('favController', ["$scope", "favManager", function($scope, favManager) {
 	$scope.favorites = favManager.getAllFavorites();
-	
 }]);

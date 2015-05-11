@@ -15,8 +15,9 @@ module.exports = function(grunt) {
 			dist: {
 				files: {			  
 					'build/GameFindr.js': [
+						'src/Controllers/setup.js',
 						'src/Controllers/route.js',
-						'src/Controllers/search.js',
+						'src/Controllers/services.js',
 						'src/Controllers/controllers.js'
 					]
 				}
@@ -30,7 +31,6 @@ module.exports = function(grunt) {
 						'node_modules/angular/angular.min.js',
 						'node_modules/angular-route/angular-route.min.js',
 						'src/Controllers/youtube.js',
-						'src/Controllers/setup.js',
 						'build/GameFindr.js'
 					]
 				}
@@ -46,7 +46,6 @@ module.exports = function(grunt) {
 					{ expand: true, src: ['Views/video.html'], dest: 'dist/', cwd: 'src' },
 					{ expand: true, src: ['Views/favs.html'], dest: 'dist/', cwd: 'src' },
 					{ expand: true, src: ['img/tetris.jpg'], dest: 'dist/', cwd: 'src' },
-					{ expand: true, src: ['img/tetris_blur.jpg'], dest: 'dist/', cwd: 'src' },
 					{ expand: true, src: ['styles.css'], dest: 'dist/', cwd: 'src' },
 					{ expand: true, src: ['partials/photos.html'], dest: 'dist/', cwd: 'src' },
 					{ expand: true, src: ['partials/details.html'], dest: 'dist/', cwd: 'src' }
